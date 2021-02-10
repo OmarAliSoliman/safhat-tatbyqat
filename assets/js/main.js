@@ -13,7 +13,7 @@ $(document).ready(function () {
       nav: false,
       items: 1,
       smartSpeed: 100,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 1800,
       autoplay: true,
       animateOut: 'fadeOut'
     });
