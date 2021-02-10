@@ -317,6 +317,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+    transition: all .5s ease;
     .circle-1,
     .circle-2,
     .circle-3,
@@ -362,6 +363,9 @@ body {
       color: #fff;
       margin-top: 19px;
       line-height: 32px;
+    }
+    &:hover{
+      transform: translateY(-5px);
     }
   }
   .card-1 {

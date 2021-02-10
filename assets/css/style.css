@@ -284,6 +284,7 @@ body {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease;
 }
 .our-service .card .circle-1,
 .our-service .card .circle-2,
@@ -329,6 +330,9 @@ body {
   color: #fff;
   margin-top: 19px;
   line-height: 32px;
+}
+.our-service .card:hover {
+  transform: translateY(-5px);
 }
 .our-service .card-1 {
   background-color: #ffbc51;

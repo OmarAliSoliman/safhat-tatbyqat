@@ -12,7 +12,7 @@ $(document).ready(function () {
       margin: 10,
       nav: false,
       items: 1,
-      smartSpeed: 1000,
+      smartSpeed: 8000,
       autoplay: true,
       animateOut: 'fadeOut'
     });
