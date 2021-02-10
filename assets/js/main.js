@@ -8,11 +8,12 @@ $(document).ready(function () {
   if ($(".header-slider").length) {
     var owl = $(".owl-carousel");
     owl.owlCarousel({
-      loop: false,
+      loop: true,
       margin: 10,
       nav: false,
       items: 1,
-      smartSpeed: 8000,
+      smartSpeed: 100,
+      autoplayTimeout: 2000,
       autoplay: true,
       animateOut: 'fadeOut'
     });
