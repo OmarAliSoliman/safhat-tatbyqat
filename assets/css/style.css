@@ -598,6 +598,10 @@ body {
     height: auto;
     margin-bottom: 20px;
   }
+
+  .offer-price {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
