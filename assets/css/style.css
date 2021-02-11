@@ -39,6 +39,38 @@ body {
 .header .header-slider .slider-item img {
   width: auto;
 }
+.header .header-slider .owl-dots {
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  bottom: 173px;
+  left: 7%;
+}
+.header .header-slider .owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.header .header-slider .owl-dots button.owl-dot.active {
+  background-color: #1d2a3b;
+}
+.header .header-slider .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.header .header-slider .owl-nav button {
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+.header .header-slider span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+.header .header-slider .owl-nav button:focus {
+  outline: none;
+}
 .header .header-content {
   padding-top: 58px;
 }
@@ -500,6 +532,7 @@ body {
 .blog .card .card-image img {
   border-radius: 11px;
   transition: all 0.5s ease;
+  width: 100%;
 }
 .blog .card .card-image .date {
   position: absolute;
@@ -544,7 +577,8 @@ body {
 }
 
 @media (min-width: 2560px) {
-  .know-the-company, .works {
+  .know-the-company,
+.works {
     background-position: unset;
   }
 
@@ -558,7 +592,15 @@ body {
     height: auto;
   }
   .header .header-slider {
-    display: none;
+    left: -500px;
+  }
+
+  .header .header-slider .owl-dots {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    bottom: 173px;
+    left: 1%;
   }
 
   .feature .fet-img {
@@ -584,6 +626,10 @@ body {
   }
   .feature .fet-img img {
     width: 100%;
+  }
+
+  .header .header-slider {
+    display: none;
   }
 }
 @media (max-width: 524px) {

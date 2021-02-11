@@ -6,7 +6,7 @@ $(document).ready(function () {
   // AOS.init();
 
   if ($(".header-slider").length) {
-    var owl = $(".owl-carousel");
+    var owl = $(".header-slider .owl-carousel");
     owl.owlCarousel({
       loop: true,
       margin: 10,
@@ -15,7 +15,8 @@ $(document).ready(function () {
       smartSpeed: 100,
       autoplayTimeout: 2000,
       autoplay: true,
-      animateOut: 'fadeOut'
+      animateOut: 'fadeOut',
+      dots: true,
     });
   }
 

@@ -59,6 +59,41 @@ body {
         width: auto;
       }
     }
+    .owl-dots {
+      text-align: left;
+      position: absolute;
+      width: 100%;
+      bottom: 173px;
+      left: 7%;
+    }
+    .owl-dots button.owl-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #ccc;
+      margin: 0 3px;
+    }
+    .owl-dots button.owl-dot.active {
+      background-color: #1d2a3b;
+    }
+    .owl-dots button.owl-dot:focus {
+      outline: none;
+    }
+    .owl-nav button {
+      // position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.38) !important;
+    }
+    span {
+      font-size: 70px;
+      position: relative;
+      top: -5px;
+    }
+    .owl-nav button:focus {
+      outline: none;
+    }
   }
   .header-content {
     padding-top: 58px;
@@ -211,7 +246,6 @@ body {
     // font-size: 36px;
     margin-top: 18px;
   }
-
 }
 
 .our-works {
@@ -237,7 +271,7 @@ body {
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
-        i{
+        i {
           color: #fff;
         }
       }
@@ -282,8 +316,8 @@ body {
       color: #fff;
       width: 250px;
       font-size: 20px;
-      transition: all .5s ease;
-      &:hover{
+      transition: all 0.5s ease;
+      &:hover {
         background-color: transparent;
         border: 1px solid #fff;
         color: #fff;
@@ -317,7 +351,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     .circle-1,
     .circle-2,
     .circle-3,
@@ -364,7 +398,7 @@ body {
       margin-top: 19px;
       line-height: 32px;
     }
-    &:hover{
+    &:hover {
       transform: translateY(-5px);
     }
   }
@@ -419,8 +453,8 @@ body {
     background-color: #20c9e4;
     width: 250px;
     line-height: 50px;
-    transition: all .5s ease;
-    &:hover{
+    transition: all 0.5s ease;
+    &:hover {
       background-color: transparent;
       border: 1px solid #20c9e4;
       color: #20c9e4;
@@ -547,6 +581,7 @@ body {
       img {
         border-radius: 11px;
         transition: all 0.5s ease;
+        width: 100%;
       }
 
       .date {
@@ -600,11 +635,12 @@ body {
   }
 }
 
-@media(min-width: 2560px){
-  .know-the-company, .works{
+@media (min-width: 2560px) {
+  .know-the-company,
+  .works {
     background-position: unset;
   }
-  .our-works{
+  .our-works {
     margin-top: -239px;
   }
 }
@@ -614,10 +650,17 @@ body {
     padding-bottom: 200px;
     height: auto;
     .header-slider {
-      // left: -1000px;
-      display: none;
+      left: -500px;
+      // display: none;
     }
   }
+  .header .header-slider .owl-dots {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    bottom: 173px;
+    left: 1%;
+}
   .feature {
     .fet-img {
       text-align: right;
@@ -650,6 +693,12 @@ body {
       }
     }
   }
+  .header {
+    .header-slider {
+      // left: -500px;
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 524px) {
@@ -665,7 +714,7 @@ body {
       margin-bottom: 20px;
     }
   }
-  .offer-price{
+  .offer-price {
     height: auto;
   }
 }
