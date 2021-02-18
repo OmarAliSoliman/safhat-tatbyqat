@@ -21,30 +21,31 @@ body {
 
 .header-parent {
   height: 900px;
+  border: 1px solid #000;
   overflow: hidden;
 }
 
-.header {
-  background-image: url("../images/header.png");
+.header .header-slider {
   background-position: center;
   background-size: cover;
-  height: 811px;
-  position: relative;
 }
-.header .header-slider {
-  position: absolute;
-  left: -70px;
-  z-index: 10;
+.header .header-slider .slider-item {
+  padding-top: 100px;
+  height: 900px;
+  direction: rtl;
+  overflow: hidden;
 }
 .header .header-slider .slider-item img {
-  width: auto;
+  width: 750px;
+}
+.header .header-slider .slider-item .man-cart {
+  width: 870px;
 }
 .header .header-slider .owl-dots {
-  text-align: left;
+  text-align: center;
   position: absolute;
   width: 100%;
   bottom: 173px;
-  left: 7%;
 }
 .header .header-slider .owl-dots button.owl-dot {
   width: 15px;
@@ -72,7 +73,7 @@ body {
   outline: none;
 }
 .header .header-content {
-  padding-top: 58px;
+  padding-top: 48px;
 }
 .header .header-content h6,
 .header .header-content h5,
@@ -108,7 +109,7 @@ body {
   height: 626px;
   background-position: center;
   background-size: cover;
-  margin-top: -200px;
+  margin-top: -100px;
   position: relative;
   z-index: 9;
   padding-top: 190px;
@@ -593,16 +594,11 @@ body {
     padding-bottom: 200px;
     height: auto;
   }
-  .header .header-slider {
-    left: -500px;
-  }
-
   .header .header-slider .owl-dots {
-    text-align: left;
+    text-align: center;
     position: absolute;
     width: 100%;
     bottom: 173px;
-    left: 1%;
   }
 
   .feature .fet-img {
@@ -613,11 +609,6 @@ body {
   .header-parent {
     height: auto;
   }
-  .header-parent .header-img {
-    left: -1200px;
-    top: 0;
-  }
-
   .know-the-company .card {
     height: 120px;
   }
@@ -631,7 +622,18 @@ body {
   }
 
   .header .header-slider {
-    display: none;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .header .header-slider img {
+    width: 100% !important;
+    margin: auto !important;
+  }
+
+  .header .header-slider .owl-dots {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
   }
 }
 @media (max-width: 524px) {

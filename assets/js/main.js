@@ -6,7 +6,7 @@ $(document).ready(function () {
   // AOS.init();
 
   if ($(".header-slider").length) {
-    var owl = $(".header-slider .owl-carousel");
+    var owl = $(".header .owl-carousel");
     owl.owlCarousel({
       loop: true,
       margin: 10,
