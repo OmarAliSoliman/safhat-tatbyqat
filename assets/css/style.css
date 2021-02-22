@@ -247,19 +247,25 @@ body {
 .our-works .card .overlay .funcy-box-media i {
   color: #fff;
 }
-.our-works .card .card-info {
+.our-works .card .default-img-parent {
+  position: relative;
+}
+.our-works .card .default-img-parent .hidden-img {
+  display: none;
+}
+.our-works .card .default-img-parent .card-info {
   background-color: #fff;
   padding: 15px;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.our-works .card .card-info a {
+.our-works .card .default-img-parent .card-info a {
   font-size: 18px;
   text-decoration: none;
   color: #000;
 }
-.our-works .card .card-info i {
+.our-works .card .default-img-parent .card-info i {
   width: 30px;
   height: 30px;
   background-color: #ff9408;
@@ -291,29 +297,11 @@ body {
   border: 1px solid #fff;
   color: #fff;
 }
-.our-works .card-1:hover .card-img {
-  background-image: url("../images/سمو-الفاكهة.png") !important;
+.our-works .card:hover .default-img {
+  display: none;
 }
-.our-works .card-2:hover .card-img {
-  background-image: url("../images/ديرتي.png") !important;
-}
-.our-works .card-3:hover .card-img {
-  background-image: url("../images/سوم.png") !important;
-}
-.our-works .card-4:hover .card-img {
-  background-image: url("../images/اشرب.png") !important;
-}
-.our-works .card-5:hover .card-img {
-  background-image: url("../images/الحافظ.png") !important;
-}
-.our-works .card-6:hover .card-img {
-  background-image: url("../images/ليمونة.png") !important;
-}
-.our-works .card-7:hover .card-img {
-  background-image: url("../images/العلي.png") !important;
-}
-.our-works .card-8:hover .card-img {
-  background-image: url("../images/مزايا2.png") !important;
+.our-works .card:hover .hidden-img {
+  display: block;
 }
 
 .our-service .serv-header {
@@ -341,6 +329,7 @@ body {
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
+  display: block;
 }
 .our-service .card .circle-1,
 .our-service .card .circle-2,
