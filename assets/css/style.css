@@ -104,7 +104,7 @@ body {
 }
 
 .know-the-company {
-  background-image: url("../images/header-after.png");
+  background-image: url("../images/header-after.webp");
   height: 626px;
   background-position: center;
   background-size: cover;
@@ -132,7 +132,7 @@ body {
   z-index: 10;
 }
 .feature::after {
-  content: url("../images/sesag.png");
+  content: url("../images/sesag.webp");
   height: 15px;
   position: absolute;
   left: 50%;
@@ -196,7 +196,7 @@ body {
 }
 
 .works {
-  background-image: url("../images/works.png");
+  background-image: url("../images/works.webp");
   background-position: center;
   background-size: cover;
   height: 626px;
